@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+ 
+  
+    <nav class="topnav">
+        <a class="active" href="../index.html">Home</a>
+        <a href="../Public/Seattle.html">Seattle</a>
+        <a href="../Public/Olympia.html">Olympia</a>
+        <a href="../Public/Bellevue.html">Bellevue</a>
+        <a href="../Public/Learn More.html">Learn More</a>
+        <a href="../Form/form.html">Contact</a>
+    </nav>
+</head>
+
+<body>
+  <section class="container">
+    <div class="contact-form">
+      <header>
+        <h2>Contact</h2>
+      </header>
+      <form id="contactForm" action="#" method="POST" onsubmit="return validateForm()">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="confirm-email">Confirm Email:</label>
+        <input type="email" id="confirm-email" name="confirm-email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <aside>
+      <h2>Find Washington on Google Maps</h2>
+      <a href="https://www.google.com/maps/@46.9991424,-122.8242944,13z?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <img src="Google_Maps_icon_(2015-2020).png" width="200px" alt="Google Maps logo for Washington state">
+      </a>
+      <p>Popular Cities</p>
+      <table class="city-facts">
+        <tr>
+          <th>Year</th>
+          <th>Fact</th>
+        </tr>
+        <tr>
+          <td>1885</td>
+          <td>Leavenworth was founded.</td>
+        </tr>
+        <tr>
+          <td>1873</td>
+          <td>Spokane was founded.</td>
+        </tr>
+        <tr>
+          <td>1851</td>
+          <td>Chehalis was founded.</td>
+        </tr>
+      </table>
+    </aside>
+  </section>
+
+
+    </head>
+    <body>
+    
+    
+
+  <footer style="text-align: center;">
+    <small style="color: white;">&copy; Copyright 2025 Helen Don for WGU. "All images are creative commons free/fair use from "www.google.com"/Data Source: Information sourced from the USA Census Gov Website(https://www.census.gov/) Additional Sources: Many images are my own.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+.topnav {
+    background-color: #333;
+    padding: 1rem;
+    width: 100%;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #43945e;
+}
+
+
+/* Layout Styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.contact-form {
+  flex: 0 0 48%; /* Form takes up 48% of the space */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside {
+  flex: 0 0 48%; /* Aside takes up 48% of the space */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+
+}
+
+
+/* Media Queries for Small Screens */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  aside {
+    flex: 0 0 80%; /* On smaller screens, form and aside take up 80% of the width */
+    margin-bottom: 20px;
+  }
+}
+</style>
